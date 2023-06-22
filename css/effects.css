@@ -1,0 +1,88 @@
+#welcome-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 9999; /* Add a higher z-index value to ensure it appears on top of other elements */
+}
+
+.fade-out {
+  animation: fadeOutAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #00BF63;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 50px;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.back-to-top.show {
+  display: block;
+  opacity: 1;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+}
+
+
+
+#scroll-arrow {
+  position: fixed;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#scroll-arrow.hidden {
+  opacity: 0;
+}
+
+#scroll-arrow i {
+  font-size: 2rem;
+  color: #555;
+}
+
+#scroll-arrow p {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+
+

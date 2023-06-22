@@ -1,0 +1,215 @@
+#testimonial-section {
+    height: fit-content;
+    overflow: hidden;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.testimonial-section-title {
+  color: #6C0C0F;
+}
+
+.testimonial-video-con {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.video-wrapper {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.testimonial-video {
+  display: block;
+  width: 100%;
+  height: 175px;
+}
+
+
+/* .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.play-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left:   40px solid #00bf63b4;
+}*/
+
+
+@media (max-width: 991px) {
+  .testimonial-video {
+    height: 160px;
+    width: fit-content;
+  }
+} 
+
+@media (max-width: 767px) {
+
+  #testimonial-section {
+    height: fit-content;
+    font-family: 'Exo 2', sans-serif;
+  }
+
+ /* .play-button {
+    width: 60px;
+    height: 60px;
+    margin-top: -45px;
+    pointer-events: auto;
+    z-index: 10;
+  }
+
+  .play-button::before {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid lightgreen;
+  }
+}
+
+@media (max-width: 576px) {
+  .play-button {
+    width: 50px;
+    height: 50px;
+    margin-top: -35px;
+  }
+
+  .play-button::before {
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid lightgreen;
+  }*/
+} 
+
+
+.video-wrap video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  pointer-events: none; 
+}
+
+.testimonial-video-carousel {
+  width: 100%;
+  max-height: 40vh;
+}
+
+.testimonial-video {
+  max-height: 40vh;
+}
+
+.carousel {
+  max-height: 40vh;
+}
+
+.patient-name {
+  color: #6C0C0F;
+  font-weight: bold;
+}
+
+.patient-symptoms {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+
+
+.testimonial-text-con {
+  max-height: fit-content;
+}
+
+.ccontainer {
+  max-width: 90%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.testimonial-text-con {
+  padding: 100px 0;
+}
+
+.testimonial-items {
+  background-color: rgba(219, 219, 219, 0.562);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.testimonial-items .info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-items img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.testimonial-items .name {
+  font-size: 24px;
+  color:#6C0C0F;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.testimonial-items .job {
+  text-transform: capitalize;
+  color: rgb(97, 97, 97);
+}
+
+.testimonial-items p {
+  font-size: 12px;
+  margin-top: 20px;
+  color:rgb(97, 97, 97);;
+}
+
+.testimonial-items .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36,88%,66%);
+}
+
+.testimonial-text-con .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonial-text-con .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(133, 126, 126);
+}
